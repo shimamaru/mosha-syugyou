@@ -1,7 +1,7 @@
+@charset "UTF-8";
 /* ------------------------------ */
 /* カスタムプロパティ */
 /* ------------------------------ */
-
 /* カラー */
 :root {
   --color-bg-base: #fff;
@@ -31,7 +31,6 @@
 /* ------------------------------ */
 /* リセットCSS */
 /* ------------------------------ */
-
 html {
   color: #000;
   background: #fff;
@@ -141,7 +140,8 @@ button {
   font-size: 100%;
   border-radius: 0;
   border: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   background-color: inherit;
 }
@@ -199,7 +199,6 @@ svg {
 /* ------------------------------ */
 /* 全体共通のスタイル */
 /* ------------------------------ */
-
 html {
   background-color: var(--color-bg-base);
 }
@@ -210,16 +209,15 @@ body {
   color: var(--color-font-base);
   font-family: var(--font-family-base);
 }
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 18px;
   }
 }
-
 /* ------------------------------ */
 /* ちょっとした使い回すスタイル */
 /* ------------------------------ */
-
 .u-visually-hidden {
   position: absolute !important;
   white-space: nowrap !important;
@@ -229,7 +227,8 @@ body {
   border: 0 !important;
   padding: 0 !important;
   clip: rect(0 0 0 0) !important;
-  clip-path: inset(50%) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
   margin: -1px !important;
 }
 
@@ -247,6 +246,7 @@ body {
   padding: 12px 16px;
   font-size: 14px;
 }
+
 @media screen and (min-width: 768px) {
   .c-button {
     transition: background-color 0.3s;
@@ -255,11 +255,11 @@ body {
     background-color: var(--color-bg-button-hover);
   }
 }
-
 /* 矢印付きボタン */
 .c-button--with-arrow {
   position: relative;
 }
+
 .c-button--with-arrow::before,
 .c-button--with-arrow::after {
   content: "";
@@ -269,11 +269,13 @@ body {
   right: 10px;
   margin: auto;
 }
+
 .c-button--with-arrow::before {
   width: 14px;
   height: 2px;
   background-color: var(--color-icon-light);
 }
+
 .c-button--with-arrow::after {
   width: 10px;
   height: 10px;
@@ -281,17 +283,18 @@ body {
   border-right: 2px solid var(--color-icon-light);
   transform: rotate(45deg);
 }
+
 .top-kv-button button {
   width: 180px;
   height: 48px;
   font-size: inherit;
 }
+
 @media screen and (min-width: 768px) {
   .top-kv-button button {
     height: 52px;
   }
 }
-
 .c-title-level2--color-light {
   color: var(--color-font-light);
 }
@@ -300,12 +303,12 @@ body {
 .c-title-level3 {
   font-size: 18px;
 }
+
 @media screen and (min-width: 768px) {
   .c-title-level3 {
     font-size: 22px;
   }
 }
-
 /*! センター */
 .c-title-level3--center {
   text-align: center;
@@ -320,4 +323,4 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: var(--width-content);
-}
+}/*# sourceMappingURL=style.css.map */
