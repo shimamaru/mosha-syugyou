@@ -4,6 +4,7 @@
 
 // コンポーネント
 .button {
+  position: relative;
   width: 121px;
   height: 40px;
   font-size: $font-size-m;
@@ -24,9 +25,23 @@
 }
 
 .container {
-  max-width: $max-width;
   width: 90%;
   margin: 0 auto;
+}
+
+// レスポンシブ
+.sp-only {
+  display: none;
+  @media screen and (max-width: $breakpoint) {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+  @media screen and (max-width: $breakpoint) {
+    display: none;
+  }
 }
 
 .header {
@@ -37,5 +52,54 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .header__button {
+    margin-right: 18px;
+  }
+}
+
+.kv {
+  background-color: $bg-light;
+  .kv__inner {
+    padding: 40px 0 24px;
+    .kv__img {
+      width: 226px;
+      height: 195px;
+
+      display: block;
+      margin: 0 auto;
+    }
+    .kv__text {
+      color: $font-base;
+      font-weight: $font-weight-bold;
+
+      .kv__title {
+        margin-top: 32px;
+        font-size: 30px;
+        line-height: 1.5;
+      }
+      .kv__list {
+        margin: 16px 0 24px;
+        .kv__list-item {
+          margin-top: 6px;
+          list-style: none;
+          font-size: $font-size-l;
+          line-height: 1.75;
+        }
+      }
+      .kv__button {
+        font-weight: $font-weight-bold;
+        width: 180px;
+        height: 48px;
+        font-size: $font-size-l;
+
+        .arrow {
+          position: absolute;
+          top: 16px;
+          right: 10.8px;
+        }
+      }
+    }
   }
 }

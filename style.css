@@ -1,4 +1,5 @@
 .button {
+  position: relative;
   width: 121px;
   height: 40px;
   font-size: 14px;
@@ -20,9 +21,26 @@
 }
 
 .container {
-  max-width: 1080px;
   width: 90%;
   margin: 0 auto;
+}
+
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 786px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media screen and (max-width: 786px) {
+  .pc-only {
+    display: none;
+  }
 }
 
 .header {
@@ -33,4 +51,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .header__button {
+  margin-right: 18px;
+}
+
+.kv {
+  background-color: #eceff4;
+}
+.kv .kv__inner {
+  padding: 40px 0 24px;
+}
+.kv .kv__inner .kv__img {
+  width: 226px;
+  height: 195px;
+  display: block;
+  margin: 0 auto;
+}
+.kv .kv__inner .kv__text {
+  color: #4c566a;
+  font-weight: 700;
+}
+.kv .kv__inner .kv__text .kv__title {
+  margin-top: 32px;
+  font-size: 30px;
+  line-height: 1.5;
+}
+.kv .kv__inner .kv__text .kv__list {
+  margin: 16px 0 24px;
+}
+.kv .kv__inner .kv__text .kv__list .kv__list-item {
+  margin-top: 6px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.kv .kv__inner .kv__text .kv__button {
+  font-weight: 700;
+  width: 180px;
+  height: 48px;
+  font-size: 16px;
+}
+.kv .kv__inner .kv__text .kv__button .arrow {
+  position: absolute;
+  top: 16px;
+  right: 10.8px;
 }/*# sourceMappingURL=style.css.map */

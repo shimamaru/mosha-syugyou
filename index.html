@@ -7,22 +7,52 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Shippori+Mincho+B1:wght@600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./style.css" />
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>模写修行</title>
   </head>
   <body>
     <header class="header">
       <div class="header__inner container">
-        <div class="logo">
-          <img src="./material//logo/logo.svg" alt="" />
-        </div>
-        <div>
-          <button class="button">登録/ログイン</button>
-        </div>
+        <img src="./material//logo/logo.svg" alt="" />
+        <button class="button header__button">登録/ログイン</button>
       </div>
     </header>
+
+    <section class="kv">
+      <div class="kv__inner container">
+        <img
+          class="kv__img"
+          src="./material/illust/top-kv-illustration.svg"
+          alt=""
+        />
+        <div class="kv__text">
+          <p class="kv__title">さくっと、パス付き資 料の作成&共有</p>
+          <ul class="kv__list">
+            <li class="kv__list-item">
+              <span><img src="./img//Vector.svg" alt="" /></span
+              >ストレスなくサクサク書ける
+            </li>
+            <li class="kv__list-item">
+              <span><img src="./img//Vector.svg" alt="" /></span
+              >ドキュメントはパス付きで共有可能
+            </li>
+            <li class="kv__list-item">
+              <span><img src="./img//Vector.svg" alt="" /></span
+              >ベータ版の期間は完全無料
+            </li>
+          </ul>
+          <button class="button kv__button">
+            登録する<span class="arrow"
+              ><img src="./img//button-arrow.svg" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
