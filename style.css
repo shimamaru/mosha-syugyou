@@ -13,16 +13,11 @@
 .button:hover {
   background-color: #2e3440;
 }
-@media screen and (min-width: 786px) {
-  .button {
-    width: 180px;
-    height: 48px;
-  }
-}
 
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1080px;
 }
 
 li {
@@ -58,6 +53,11 @@ li {
 }
 .header .header__inner .header__button {
   margin-right: 18px;
+}
+@media screen and (min-width: 786px) {
+  .header .header__inner .header__button {
+    margin: 0;
+  }
 }
 
 .kv {

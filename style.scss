@@ -17,16 +17,12 @@
   &:hover {
     background-color: $bg-button-hover;
   }
-
-  @media screen and (min-width: $breakpoint) {
-    width: 180px;
-    height: 48px;
-  }
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: $max-width-lg;
 }
 
 li {
@@ -48,8 +44,12 @@ li {
   }
 }
 
+// header
 .header {
   background-color: $bg-light;
+
+  @media screen and (min-width: $breakpoint) {
+  }
 
   .header__inner {
     height: 70px;
@@ -59,9 +59,13 @@ li {
 
     .header__button {
       margin-right: 18px;
+      @media screen and (min-width: $breakpoint) {
+        margin: 0;
+      }
     }
   }
 }
+// kv
 
 .kv {
   background-color: $bg-light;
