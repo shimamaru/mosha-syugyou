@@ -164,3 +164,55 @@ li {
     }
   }
 }
+
+.function {
+  background-color: $bg-dark;
+  .function__wave {
+    background-color: $bg-base;
+    .function__wave-img {
+      transform: translateY(2px);
+      background-color: $bg-base;
+    }
+    .function__wave-img-bottom {
+      transform: translateY(-2px);
+    }
+  }
+  .function__inner {
+    color: $font-light;
+    padding: 40px 0;
+
+    .function__title {
+      text-align: center;
+      font-size: $font-size-xxxl;
+      font-weight: $font-weight-bold;
+    }
+
+    .function__list {
+      .function__item {
+        margin-top: 43px;
+        .function__list-img-wrap {
+          // width: 90%;
+          // margin: 0 auto;
+          .function__list-img {
+            // width: 100%;
+            width: 324px;
+            height: 162px;
+          }
+        }
+
+        .function__list-title {
+          margin: 16px 0 8px;
+          font-size: $font-size-xl;
+          font-weight: $font-weight-bold;
+          line-height: 155.556%;
+        }
+
+        .function__list-text {
+          font-size: $font-size-m;
+          font-weight: $font-weight-base;
+          line-height: 171.429%;
+        }
+      }
+    }
+  }
+}
