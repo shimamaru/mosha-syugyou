@@ -169,9 +169,11 @@ li {
 .function .function__inner .function__list .function__item {
   margin-top: 43px;
 }
+.function .function__inner .function__list .function__item .function__list-img-wrap {
+  text-align: center;
+}
 .function .function__inner .function__list .function__item .function__list-img-wrap .function__list-img {
-  width: 324px;
-  height: 162px;
+  width: 100%;
 }
 .function .function__inner .function__list .function__item .function__list-title {
   margin: 16px 0 8px;
@@ -183,4 +185,23 @@ li {
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
+}
+
+.footer {
+  padding: 40px 0 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer .footer__list .footer__link {
+  text-decoration: none;
+  color: #4c566a;
+}
+.footer .footer__copy-right {
+  padding-top: 16px;
+  color: #4c566a;
 }/*# sourceMappingURL=style.css.map */

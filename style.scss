@@ -191,12 +191,9 @@ li {
       .function__item {
         margin-top: 43px;
         .function__list-img-wrap {
-          // width: 90%;
-          // margin: 0 auto;
+          text-align: center;
           .function__list-img {
-            // width: 100%;
-            width: 324px;
-            height: 162px;
+            width: 100%;
           }
         }
 
@@ -214,5 +211,26 @@ li {
         }
       }
     }
+  }
+}
+
+// footer
+.footer {
+  padding: 40px 0 24px;
+  margin: 0 auto;
+  text-align: center;
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .footer__link {
+      text-decoration: none;
+      color: $font-base;
+    }
+  }
+  .footer__copy-right {
+    padding-top: 16px;
+    color: $font-base;
   }
 }
