@@ -14,7 +14,7 @@
   border-radius: 8px;
   color: $font-light;
   background-color: $bg-button;
-  :hover {
+  &:hover {
     background-color: $bg-button-hover;
   }
 
@@ -27,6 +27,10 @@
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+li {
+  list-style: none;
 }
 
 // レスポンシブ
@@ -52,24 +56,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  .header__button {
-    margin-right: 18px;
+    .header__button {
+      margin-right: 18px;
+    }
   }
 }
 
 .kv {
   background-color: $bg-light;
+
   .kv__inner {
     padding: 40px 0 24px;
+
     .kv__img {
       width: 226px;
       height: 195px;
-
       display: block;
       margin: 0 auto;
     }
+
     .kv__text {
       color: $font-base;
       font-weight: $font-weight-bold;
@@ -79,15 +85,17 @@
         font-size: 30px;
         line-height: 1.5;
       }
+
       .kv__list {
         margin: 16px 0 24px;
+
         .kv__list-item {
           margin-top: 6px;
-          list-style: none;
           font-size: $font-size-l;
           line-height: 1.75;
         }
       }
+
       .kv__button {
         font-weight: $font-weight-bold;
         width: 180px;
@@ -98,6 +106,59 @@
           position: absolute;
           top: 16px;
           right: 10.8px;
+        }
+      }
+    }
+  }
+
+  .kv__wave {
+    background-color: $bg-base;
+  }
+}
+
+.feature {
+  .feature__inner {
+    margin: 64px 0;
+    text-align: center;
+
+    .feature__title {
+      padding-bottom: 8px;
+      font-size: $font-size-xxxl;
+      font-weight: $font-weight-bold;
+    }
+
+    .feature__list {
+      .feature__item {
+        color: $font-base;
+        margin: 40px auto 0;
+        max-width: 280px;
+
+        .feature__list-icon-wrap {
+          border-radius: 30px;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          background-color: $bg-icon;
+
+          .feature__list-icon {
+            border: 50%;
+            margin: 0 auto;
+          }
+        }
+
+        .feature__list-title {
+          margin: 16px 0;
+          font-size: $font-size-xl;
+          font-weight: $font-weight-bold;
+          line-height: 155.556%;
+        }
+        .feature__list-text {
+          font-size: $font-size-m;
+          font-weight: $font-weight-base;
+          line-height: 171.429%;
         }
       }
     }

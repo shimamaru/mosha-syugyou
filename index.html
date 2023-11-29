@@ -1,24 +1,23 @@
-<!-- htmlの雛形 -->
 <!DOCTYPE html>
 <html lang="ja">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Shippori+Mincho+B1:wght@600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./reset.css" />
-  <link rel="stylesheet" href="./style.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>模写修行</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Shippori+Mincho+B1:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="header__inner container">
-        <img src="./material//logo/logo.svg" alt="" />
+        <img src="./material/logo/logo.svg" alt="" />
         <button class="button header__button">登録/ログイン</button>
       </div>
     </header>
@@ -31,27 +30,80 @@
           alt=""
         />
         <div class="kv__text">
-          <p class="kv__title">さくっと、パス付き資 料の作成&共有</p>
+          <p class="kv__title">さくっと、パス付き資料の作成&共有</p>
           <ul class="kv__list">
             <li class="kv__list-item">
-              <span><img src="./img//Vector.svg" alt="" /></span
+              <span><img src="./img/Vector.svg" alt="" /></span
               >ストレスなくサクサク書ける
             </li>
             <li class="kv__list-item">
-              <span><img src="./img//Vector.svg" alt="" /></span
+              <span><img src="./img/Vector.svg" alt="" /></span
               >ドキュメントはパス付きで共有可能
             </li>
             <li class="kv__list-item">
-              <span><img src="./img//Vector.svg" alt="" /></span
+              <span><img src="./img/Vector.svg" alt="" /></span
               >ベータ版の期間は完全無料
             </li>
           </ul>
           <button class="button kv__button">
             登録する<span class="arrow"
-              ><img src="./img//button-arrow.svg" alt=""
+              ><img src="./img/button-arrow.svg" alt=""
             /></span>
           </button>
         </div>
+      </div>
+      <div class="kv__wave">
+        <img src="./material/wave/top-kv-wave-bottom.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature__inner">
+        <h2 class="feature__title">快適さへのこだわり</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <div class="feature__list-icon-wrap">
+              <img
+                class="feature__list-icon"
+                src="./material/icon/icon-function.svg"
+                alt=""
+              />
+            </div>
+            <h3 class="feature__list-title">シンプルな機能</h3>
+            <p class="feature__list-text">
+              多機能でない分、わかりやすく・使いやす機能。
+              書くこと、共有することにのみ特化。
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__list-icon-wrap">
+              <img
+                class="feature__list-icon"
+                src="./material/icon/icon-document.svg"
+                alt=""
+              />
+            </div>
+            <h3 class="feature__list-title">綺麗なドキュメント</h3>
+            <p class="feature__list-text">
+              見やすいドキュメント、見やすい管理画面。
+              シンプルでわかりやすいデザイン。
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__list-icon-wrap">
+              <img
+                class="feature__list-icon"
+                src="./material/icon/icon-editor.svg"
+                alt=""
+              />
+            </div>
+            <h3 class="feature__list-title">書きやすいエディタ</h3>
+            <p class="feature__list-text">
+              ドキュメント作成画面の装飾はショートカッ
+              トを用意。慣れればサクサク。
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
   </body>

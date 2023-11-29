@@ -10,7 +10,7 @@
   color: #eceff4;
   background-color: #4c566a;
 }
-.button :hover {
+.button:hover {
   background-color: #2e3440;
 }
 @media screen and (min-width: 786px) {
@@ -23,6 +23,10 @@
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+li {
+  list-style: none;
 }
 
 .sp-only {
@@ -52,7 +56,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header .header__button {
+.header .header__inner .header__button {
   margin-right: 18px;
 }
 
@@ -82,7 +86,6 @@
 }
 .kv .kv__inner .kv__text .kv__list .kv__list-item {
   margin-top: 6px;
-  list-style: none;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -96,4 +99,47 @@
   position: absolute;
   top: 16px;
   right: 10.8px;
+}
+.kv .kv__wave {
+  background-color: #fff;
+}
+
+.feature .feature__inner {
+  margin: 64px 0;
+  text-align: center;
+}
+.feature .feature__inner .feature__title {
+  padding-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.feature .feature__inner .feature__list .feature__item {
+  color: #4c566a;
+  margin: 40px auto 0;
+  max-width: 280px;
+}
+.feature .feature__inner .feature__list .feature__item .feature__list-icon-wrap {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #d8dee9;
+}
+.feature .feature__inner .feature__list .feature__item .feature__list-icon-wrap .feature__list-icon {
+  border: 50%;
+  margin: 0 auto;
+}
+.feature .feature__inner .feature__list .feature__item .feature__list-title {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 155.556%;
+}
+.feature .feature__inner .feature__list .feature__item .feature__list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
 }/*# sourceMappingURL=style.css.map */
