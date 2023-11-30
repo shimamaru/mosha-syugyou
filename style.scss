@@ -157,6 +157,7 @@ li {
 
     @media screen and (min-width: $breakpoint) {
       margin: 80px auto;
+      padding-bottom: 60px;
     }
 
     .feature__title {
@@ -246,29 +247,67 @@ li {
       text-align: center;
       font-size: $font-size-xxxl;
       font-weight: $font-weight-bold;
+      @media screen and (min-width: $breakpoint) {
+        font-size: 32px;
+      }
+
+      @media screen and (min-width: $breakpoint) {
+        margin-bottom: 80px;
+      }
     }
 
     .function__list {
+      :nth-child(2n) {
+        @media screen and (min-width: $breakpoint) {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+      }
       .function__item {
         margin-top: 43px;
+        @media screen and (min-width: $breakpoint) {
+          margin-top: 64px;
+          display: flex;
+          gap: 56px;
+        }
         .function__list-img-wrap {
           text-align: center;
+
+          @media screen and (min-width: $breakpoint) {
+            max-width: 594px;
+            max-height: 297px;
+          }
           .function__list-img {
             width: 100%;
           }
         }
 
-        .function__list-title {
-          margin: 16px 0 8px;
-          font-size: $font-size-xl;
-          font-weight: $font-weight-bold;
-          line-height: 155.556%;
-        }
+        .function__doc-wrap {
+          @media screen and (min-width: $breakpoint) {
+            text-align-last: left;
+          }
+          .function__list-title {
+            margin: 16px 0 8px;
+            font-size: $font-size-xl;
+            font-weight: $font-weight-bold;
+            line-height: 155.556%;
 
-        .function__list-text {
-          font-size: $font-size-m;
-          font-weight: $font-weight-base;
-          line-height: 171.429%;
+            @media screen and (min-width: $breakpoint) {
+              font-size: 22px;
+              margin: 24px auto 16px;
+            }
+          }
+
+          .function__list-text {
+            font-size: $font-size-m;
+            font-weight: $font-weight-base;
+            line-height: 171.429%;
+
+            @media screen and (min-width: $breakpoint) {
+              max-width: 324px;
+              font-size: $font-size-l;
+            }
+          }
         }
       }
     }

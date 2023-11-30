@@ -153,6 +153,7 @@ li {
 @media screen and (min-width: 786px) {
   .feature .feature__inner {
     margin: 80px auto;
+    padding-bottom: 60px;
   }
 }
 .feature .feature__inner .feature__title {
@@ -242,25 +243,72 @@ li {
   font-size: 24px;
   font-weight: 700;
 }
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__title {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list :nth-child(2n) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 .function .function__inner .function__list .function__item {
   margin-top: 43px;
+}
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list .function__item {
+    margin-top: 64px;
+    display: flex;
+    gap: 56px;
+  }
 }
 .function .function__inner .function__list .function__item .function__list-img-wrap {
   text-align: center;
 }
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list .function__item .function__list-img-wrap {
+    max-width: 594px;
+    max-height: 297px;
+  }
+}
 .function .function__inner .function__list .function__item .function__list-img-wrap .function__list-img {
   width: 100%;
 }
-.function .function__inner .function__list .function__item .function__list-title {
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list .function__item .function__doc-wrap {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
+.function .function__inner .function__list .function__item .function__doc-wrap .function__list-title {
   margin: 16px 0 8px;
   font-size: 18px;
   font-weight: 700;
   line-height: 155.556%;
 }
-.function .function__inner .function__list .function__item .function__list-text {
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list .function__item .function__doc-wrap .function__list-title {
+    font-size: 22px;
+    margin: 24px auto 16px;
+  }
+}
+.function .function__inner .function__list .function__item .function__doc-wrap .function__list-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 171.429%;
+}
+@media screen and (min-width: 786px) {
+  .function .function__inner .function__list .function__item .function__doc-wrap .function__list-text {
+    max-width: 324px;
+    font-size: 16px;
+  }
 }
 
 .footer {
