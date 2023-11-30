@@ -48,9 +48,6 @@ li {
 .header {
   background-color: $bg-light;
 
-  @media screen and (min-width: $breakpoint) {
-  }
-
   .header__inner {
     height: 70px;
     display: flex;
@@ -73,30 +70,57 @@ li {
   .kv__inner {
     padding: 40px 0 24px;
 
+    @media screen and (min-width: $breakpoint) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 160px;
+      padding: 100px;
+      padding-bottom: 0;
+    }
+
     .kv__img {
       width: 226px;
       height: 195px;
       display: block;
       margin: 0 auto;
+      @media screen and (min-width: $breakpoint) {
+        width: 540px;
+        height: 465px;
+        transform: translateY(-50px);
+      }
     }
 
     .kv__text {
       color: $font-base;
       font-weight: $font-weight-bold;
+      @media screen and (min-width: $breakpoint) {
+        width: 379px;
+        height: 327px;
+      }
 
       .kv__title {
         margin-top: 32px;
         font-size: 30px;
         line-height: 1.5;
+
+        @media screen and (min-width: $breakpoint) {
+          font-size: 38px;
+        }
       }
 
       .kv__list {
         margin: 16px 0 24px;
+        @media screen and (min-width: $breakpoint) {
+          margin: 24px 0 32px;
+        }
 
         .kv__list-item {
           margin-top: 6px;
           font-size: $font-size-l;
           line-height: 1.75;
+          @media screen and (min-width: $breakpoint) {
+            font-size: $font-size-xl;
+          }
         }
       }
 
@@ -117,25 +141,49 @@ li {
 
   .kv__wave {
     background-color: $bg-base;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
 .feature {
   .feature__inner {
-    margin: 64px 0;
+    color: $font-base;
+    margin: 64px auto 0;
     text-align: center;
+
+    @media screen and (min-width: $breakpoint) {
+      margin: 80px auto;
+    }
 
     .feature__title {
       padding-bottom: 8px;
       font-size: $font-size-xxxl;
       font-weight: $font-weight-bold;
+
+      @media screen and (min-width: $breakpoint) {
+        font-size: 32px;
+      }
     }
 
     .feature__list {
+      @media screen and (min-width: $breakpoint) {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-top: 80px;
+      }
       .feature__item {
-        color: $font-base;
         margin: 40px auto 0;
         max-width: 280px;
+
+        @media screen and (min-width: $breakpoint) {
+          max-width: 344px;
+          margin: 0;
+        }
 
         .feature__list-icon-wrap {
           border-radius: 30px;
@@ -145,7 +193,7 @@ li {
           justify-content: center;
           align-items: center;
           margin: 0 auto;
-          background-color: $bg-icon;
+          background-color: $icon-light;
 
           .feature__list-icon {
             border: 50%;
@@ -158,11 +206,20 @@ li {
           font-size: $font-size-xl;
           font-weight: $font-weight-bold;
           line-height: 155.556%;
+
+          @media screen and (min-width: $breakpoint) {
+            font-size: 22px;
+          }
         }
         .feature__list-text {
           font-size: $font-size-m;
           font-weight: $font-weight-base;
           line-height: 171.429%;
+
+          @media screen and (min-width: $breakpoint) {
+            font-size: $font-size-l;
+            line-height: 1.75;
+          }
         }
       }
     }
