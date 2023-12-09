@@ -1,5 +1,7 @@
-// font-family: "Noto Sans JP", sans-serif;
-// font-family: "Shippori Mincho B1", serif;
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 @import "./_variables.scss";
 
 // コンポーネント
@@ -14,6 +16,7 @@
   border-radius: 8px;
   color: $font-light;
   background-color: $bg-button;
+  cursor: pointer;
   &:hover {
     background-color: $bg-button-hover;
   }
@@ -31,7 +34,7 @@ li {
 
 // レスポンシブ
 .sp-only {
-  display: none;
+  display: none !important;
   @media screen and (max-width: $breakpoint) {
     display: block;
   }
@@ -40,7 +43,7 @@ li {
 .pc-only {
   display: block;
   @media screen and (max-width: $breakpoint) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -74,8 +77,12 @@ li {
       display: flex;
       flex-direction: row-reverse;
       gap: 160px;
-      padding: 100px;
+      padding-top: 100px;
       padding-bottom: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+      gap: 40px;
     }
 
     .kv__img {
@@ -84,9 +91,18 @@ li {
       display: block;
       margin: 0 auto;
       @media screen and (min-width: $breakpoint) {
-        width: 540px;
-        height: 465px;
+        width: 100%;
+        height: 100%;
+        max-width: 540px;
+        max-height: 465px;
         transform: translateY(-50px);
+      }
+
+      @media screen and (min-width: $breakpoint-sm) {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 345px;
       }
     }
 
@@ -96,6 +112,10 @@ li {
       @media screen and (min-width: $breakpoint) {
         width: 379px;
         height: 327px;
+      }
+
+      @media screen and (min-width: $breakpoint-sm) {
+        text-align: center;
       }
 
       .kv__title {
@@ -184,6 +204,14 @@ li {
         @media screen and (min-width: $breakpoint) {
           max-width: 344px;
           margin: 0;
+
+          // :nth-child(3) {
+          //   margin-top: 80px;
+
+          //   @media screen and (min-width: $breakpoint-sm) {
+          //     margin: 0;
+          //   }
+          // }
         }
 
         .feature__list-icon-wrap {
@@ -265,11 +293,19 @@ li {
       }
       .function__item {
         margin-top: 43px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
         @media screen and (min-width: $breakpoint) {
           margin-top: 64px;
           display: flex;
           gap: 56px;
         }
+
         .function__list-img-wrap {
           text-align: center;
 
@@ -319,6 +355,14 @@ li {
   padding: 40px 0 24px;
   margin: 0 auto;
   text-align: center;
+  color: $font-base;
+  font-size: $font-size-m;
+
+  @media screen and (min-width: $breakpoint) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .footer__list {
     display: flex;
     flex-direction: column;
@@ -332,5 +376,8 @@ li {
   .footer__copy-right {
     padding-top: 16px;
     color: $font-base;
+    @media screen and (min-width: $breakpoint) {
+      padding-top: 0;
+    }
   }
 }
